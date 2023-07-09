@@ -1,0 +1,254 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 14-jun-2023, 10:29:49
+    Author     : bryan
+*/
+.animacion {
+  width: 600px;
+  height: 50px;
+  background-color: white;
+  animation-name: mover;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(200px); }
+}
+
+
+
+.bordeImg{
+    border:10px solid white;
+    padding:50px;
+    border-image:url(borde1.png) 30 stretch/round;
+}
+
+
+
+.borde-redondeado {
+  border-radius: 50px;
+  padding: 10px;
+  border: 10px solid white;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 200px;
+  background-color: mediumslateblue;
+}
+
+
+section {
+  height: 200px;
+  background-color: khaki;
+}
+
+.seccion1 {
+  background-color: pink;
+  height: 150px;
+}
+
+.seccion2 {
+  background-color: lightyellow;
+  height: 100px;
+}
+
+.seccion3 {
+  background-color: powderblue;
+  height: 100px;
+}
+.seccion4 {
+  background-color: pink;
+  height: 200px;
+}
+.seccion5 {
+  background-color: aquamarine;
+  height: 150px;
+}
+.seccion6 {
+  background-color: blue;
+  height: 250px;
+}
+.seccion7 {
+  background-color: red;
+  height: 150px;
+  
+}
+
+.seccion8 {
+  background-color: greenyellow;
+  height: 250px;
+}
+
+.seccion9 {
+  background-color: blue;
+  height: 250px;
+}
+
+footer {
+  height: 50px;
+  background-color: lightpink;
+}
+
+
+
+
+/*Definir el tamaño de cada seccion*/
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.imagen {
+  width: 400px;
+  height: 400px;
+}
+
+.texto {
+  margin-left: 50px;
+}
+
+
+
+/* Fondo de imagen ajustada*/
+body {
+  background-image: url("img/jap3.jpg");
+  background-size: cover;
+}
+
+.mi-contenedor {
+text-align: center;
+  padding: 20px;
+}
+
+
+/*Este codigo es para el difuminado*/
+body {
+background: linear-gradient(to bottom, #FF3366, #663399);
+}
+
+h3, p {
+  color: black;
+  text-align: center;
+}
+
+/*este para el margen*/
+.margen {
+  margin: 50px;
+  
+}
+
+/*El padding*/
+.padding {
+  padding: 10px;
+}
+
+/*5 estilos diferentes de textos*/
+.estilo1 {
+  font-size: 24px;
+  color: red;
+}
+
+.estilo2 {
+  
+ 
+font-weight: bold;
+  
+ 
+text-decoration: underline;
+}
+
+.estilo3 {
+  
+ 
+font-style: italic;
+}
+
+.estilo4 {
+  
+ 
+text-transform: uppercase;
+}
+
+.estilo5 {
+text-shadow: 2px 2px 4px #000000;
+}
+
+
+/*sombra de un div*/
+.sombra {
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*animaciones*/
+.imagen-transformada {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagen-transformada img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto 1: Sesgado horizontal */
+.efecto1:hover img {
+  transform: skewX(20deg);
+}
+
+/* Efecto 2: Sesgado vertical */
+.efecto2:hover img {
+  transform: skewY(20deg);
+}
+
+/* Efecto 3: Sesgado diagonal */
+.efecto3:hover img {
+  transform: skew(20deg, 10deg);
+}
+
+/* Efecto 4: Matriz de transformación */
+.efecto4:hover img {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+/* Efecto 5: Escala */
+.efecto5:hover img {
+    
+  transform: scale(5.2);
+}
+
+/* Efecto 6: Rotación */
+.efecto6:hover img {
+  transform: rotate(45deg);
+}
+
+/* Efecto 7: Rotación en 3D */
+.efecto7:hover img {
+  transform: rotateX(45deg) rotateY(45deg);
+}
+/*transparencia*/
+.transparencia {
+  width: 300px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+

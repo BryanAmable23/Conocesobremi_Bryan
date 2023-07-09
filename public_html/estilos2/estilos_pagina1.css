@@ -1,0 +1,68 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 12-jun-2023, 21:18:16
+    Author     : bryan
+*/
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+.animacion {
+  width: 500px;
+  height: 40px;
+  background-color: ghostwhite;
+  animation-name: mover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.borde-redondeado {
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.borde-imagen {
+padding: 20px;
+border: 10px solid black;
+border-image: url(imagen-borde.jpg) 30 round;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00ff00, #0000ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.sombra {
+  width: 200px;
+  height: 150px;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
